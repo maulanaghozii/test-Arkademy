@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Source Code Jawaban no. 5</title>
+    </head>
+    <body>
+
+        <p id="hasil"></p>
+        <script>
+
+            function cetak(a) {
+                var panjang = 32;
+                var charset = "abcdefghijklmnopqrstuvwxyz0123456789";
+                var acak = " " ;
+                for(var i = 0; i<a; i++) {
+                    for (var j = 0, m = charset.length; j < panjang; j++) {
+                        acak += charset.charAt(Math.floor(Math.random() * m));
+                    }
+                }
+                return acak;
+            }
+
+            document.getElementById('hasil').innerHTML = cetak(3);
+
+        </script>
+    </body>
+</html>
