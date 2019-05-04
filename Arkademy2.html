@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Sourcecode Soal nomer 2</title>
+    </head>
+    <body>
+        <script>
+            function validasi(username,password){
+
+                    // Username maksimal 8 karakter
+                    if(username.length > 8){  //method lenght umtuk mengehitung banyaknya karakter
+                        console.log("Username tidak boleh lebih dari 8 karatkter. ");
+                        return false;
+                    };
+
+                    // Password minimal 8 karakter dan
+                    // password kombinasi Hurus kapital, hurus kecil, angka dan karakter spesial
+                    if (password.length < 8){
+                        console.log("password Anda kurang dari 8 karakter");
+                        return false;
+                    } else if (password.search(/[0-9]/)=== -1){ // method search untuk mencari karakter pertama pada suatu string
+                        console.log("Password minimla terdiri dari 1 angka")
+                        return false;
+                    } else if (password.search(/[a-z]/)=== -1){
+                        console.log("Password minimla terdiri dari 1 huruf kecil")
+                        return false;
+                    } else if (password.search(/[A-Z]/)=== -1){
+                        console.log("Password minimla terdiri dari 1 huruf kapital")
+                        return false;
+                    } else if (password.search(/[!\@\#\$\%\^\&\(\)\_\+\.\,\;\:]/)=== -1){
+                        console.log("Password minimla terdiri dari 1 karakter spesial")
+                        return false;
+                    } 
+                    console.log("username dan password valid!");
+                return true;
+            }
+            validasi("Arkademy","M#aulana17")
+        </script>
+    </body>
+</html>
