@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Sourcode Soal No.1</title>
+    </head>
+    <body>
+        <!-- Name : Maulana Ghozi Humama Z -->
+        <!-- Email : ghozihz@gmail.com -->
+
+
+        <!-- Javascript -->
+        <script>
+            function biodata(){
+
+                // Return dalam bentuk JSON
+                return console.log(json);
+            }
+
+            // data Obj Javascript
+            var obj = {
+                "nama" : "Maulana",
+                "address" : "Depok",
+                "is_married" : true,
+                "school" : {
+                    "highSchool" : "SMA Negeri 1 Pringsewu",
+                    "university" : "Arkademy University"
+                },
+                "skills" : ["HTML","CSS","Javascript"]
+            };
+
+            // Mengubah Obj Javascript kedalam JSON
+            json = JSON.stringify(obj);
+        </script>
+    </body>
+</html>
